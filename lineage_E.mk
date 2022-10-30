@@ -21,8 +21,8 @@ DEVICE_PATH := device/10or/E
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from E device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
@@ -30,7 +30,7 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 PRODUCT_BRAND := 10or
 PRODUCT_DEVICE := E
 PRODUCT_MANUFACTURER := 10or
-PRODUCT_NAME := arrow_E
+PRODUCT_NAME := lineage_E
 PRODUCT_MODEL := E
 
 PRODUCT_GMS_CLIENTID_BASE := android-huaqin

@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_E.mk
+    $(LOCAL_DIR)/lineage_E.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_E-userdebug \
-    arrow_E-eng
+    lineage_E-userdebug \
+    lineage_E-eng
