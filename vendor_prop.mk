@@ -100,7 +100,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     ro.qualcomm.cabl=0 \
     ro.vendor.display.cabl=2 \
-    ro.sf.lcd_density=280 \
+    ro.sf.lcd_density=420 \
     persist.debug.wfd.enable=1 \
     persist.hwc.enable_vds=1
 

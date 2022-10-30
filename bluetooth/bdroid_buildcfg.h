@@ -18,7 +18,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Xiaomi Redmi 3S"
+#define BTM_DEF_LOCAL_NAME   "Tenor E"
 
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16

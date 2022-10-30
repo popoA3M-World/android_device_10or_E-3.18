@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/land
+DEVICE_PATH := device/10or/E
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -50,8 +50,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
 #TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := land_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
+TARGET_KERNEL_CONFIG := holland1_defconfig
+TARGET_KERNEL_SOURCE := kernel/10or/E
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -190,9 +190,9 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_land
+TARGET_INIT_VENDOR_LIB := libinit_E
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_land
+TARGET_RECOVERY_DEVICE_MODULES := libinit_E
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -232,6 +232,7 @@ include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Treble
 ENABLE_VENDOR_IMAGE := true
@@ -256,4 +257,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/xiaomi/land/BoardConfigVendor.mk
+-include vendor/10or/E/BoardConfigVendor.mk

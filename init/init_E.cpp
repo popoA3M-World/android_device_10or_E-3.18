@@ -48,7 +48,7 @@ void init_variant_properties(){
     std::string buf;
 
     std::string product = GetProperty("ro.product.name", "");
-    if (product.find("land") == std::string::npos)
+    if (product.find("E") == std::string::npos)
         return;
 
     fin.open("/proc/cmdline");
@@ -58,11 +58,11 @@ void init_variant_properties(){
     fin.close();
 
     if (buf.find("S88537AB1") != std::string::npos) {
-        property_set("ro.product.model", "Redmi 3X");
-        property_set("ro.vendor.product.model", "Redmi 3X");
+        property_set("ro.product.model", "10or E");
+        property_set("ro.vendor.product.model", "10or E");
     } else {
-        property_set("ro.product.model", "Redmi 3S");
-        property_set("ro.vendor.product.model", "Redmi 3X");
+        property_set("ro.product.model", "10or E");
+        property_set("ro.vendor.product.model", "10or E");
     }
 }
 

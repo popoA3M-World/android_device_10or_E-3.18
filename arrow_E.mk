@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/land
+DEVICE_PATH := device/10or/E
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -24,25 +24,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/arrow/config/common.mk)
 
-# Inherit from land device
+# Inherit from E device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := land
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := arrow_land
-DEVICE_MAINTAINER := Bauuuuu
-PRODUCT_MODEL := Redmi 3S/3X
+PRODUCT_BRAND := 10or
+PRODUCT_DEVICE := E
+PRODUCT_MANUFACTURER := 10or
+PRODUCT_NAME := arrow_E
+PRODUCT_MODEL := E
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-huaqin
 
-TARGET_VENDOR_PRODUCT_NAME := land
+TARGET_VENDOR_PRODUCT_NAME := E
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="land-user 6.0.1 MMB29M V10.2.2.0.MALMIXM release-keys"
+    PRIVATE_BUILD_DESC="E-user 8.1.0 OPM1.171019.019 10or_E_V1_0_109 release-keys"
 
 # Set BUILD_FINGERPRINT variable
-BUILD_FINGERPRINT := "Xiaomi/land/land:6.0.1/MMB29M/V10.2.2.0.MALMIXM:user/release-keys"
+BUILD_FINGERPRINT := "10or/E/E:8.1.0/OPM1.171019.019/10or_E_V1_0_109:user/release-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
